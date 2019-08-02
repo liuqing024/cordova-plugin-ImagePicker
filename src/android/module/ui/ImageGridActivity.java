@@ -133,7 +133,9 @@ public class ImageGridActivity extends ImageBaseActivity implements ImageDataSou
         if (imagePicker.getSelectLimit() == 0 || imagePicker.getSelectLimit() == 1) {
             imagePicker.setSelectLimit(1);
             imagePicker.setMultiMode(false);
-        }
+        } else {
+	    imagePicker.setMultiMode(true);
+	}
 
         Intent data = getIntent();
         // 新增可直接拍照
